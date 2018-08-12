@@ -1,0 +1,33 @@
+=Thingiverse API
+
+This is a stripped down adaption of the [Thingiverse API gem](https://github.com/makerbot/thingiverse-ruby) made for for teaching purposes of the Le Wagon coding bootcamp.
+
+For more information see: http://www.thingiverse.com/developers
+
+=Rails Installation
+
+Add to your gemfile:
+
+  gem 'thingiverse', '0.0.1', git: 'https://github.com/rodloboz/thingiverse'
+
+=Ruby gem usage
+
+After you have an access_token, you can do this:
+
+  tv = Thingiverse::Connection.new
+  tv.access_token = my_access_token
+
+  # Search things by term
+  tv.things.search(term)
+
+  # Find thing by id
+  thing = tv.things.find(thing_id)
+
+  # Get thing files
+  thing.files
+
+  # Get thing images
+  thing.images
+
+  # Get thing categories
+  thing.categories
