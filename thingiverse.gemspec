@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.require_paths     = ["lib"]
   s.files             = Dir["{lib}/**/*.rb", "README.rdoc"]
 
-  s.add_dependency("json")
-  s.add_dependency("httparty")
+  # s.add_dependency("json")
+  # s.add_dependency("httparty")
 end
